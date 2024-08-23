@@ -30,7 +30,7 @@ DC_IPV4 = {
 }
 
 
-def PandaSession(session, logger=LOGS, _exit=True):
+def UbotSession(session, logger=LOGS, _exit=True):
     if session:
         # Telethon Session
         if session.startswith(CURRENT_VERSION):
