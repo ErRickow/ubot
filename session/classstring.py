@@ -5,7 +5,7 @@
 # Recode by Ilham Mansiz
 
 from ..database._var import Var
-from .._database import pdB
+from ..database import pdB
 import base64
 import ipaddress
 import struct
