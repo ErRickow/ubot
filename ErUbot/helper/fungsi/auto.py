@@ -81,7 +81,7 @@ else:
 var = heroku_var
 ilhammansiezzzz = "BOT_TOKEN"
 botusername = "TG_BOT_USERNAME"
-ilhammansiezzzzzz = "PRIVATE_GROUP_BOT_API_ID"
+errickow = "PRIVATE_GROUP_BOT_API_ID"
 
 
 async def autogrup():
@@ -262,10 +262,10 @@ async def autobot():
             await sabunbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
             os.remove(photo)
             if not str(chat_id).startswith("-100"):
-               SqL.set_key(f"{ilhammansiezzzzzz}", "-100" + str(chat_id))
-               SqL.set_key(f"{ilhammansiezzzzzz}", token)
+               SqL.set_key(f"{errickow}", "-100" + str(chat_id))
+               SqL.set_key(f"{errickow}", token)
                SqL.set_key(f"{botusername}", f"@{username}")
-               var[ilhammansiezzzzzz] = "-100" + str(chat_id)
+               var[errickow] = "-100" + str(chat_id)
                var[ilhammansiezzzz] = token
                var[botusername] = f"@{username}"
             LOGS.info(f"SELESAI, ASSISTANT BOT ANDA SUDAH DIBUAT @{username} dan grup")
@@ -343,10 +343,10 @@ async def autobot():
         await sabunbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
         os.remove(photo)
         if not str(chat_id).startswith("-100"):
-            SqL.set_key(f"{ilhammansiezzzzzz}", "-100" + str(chat_id))
-            SqL.set_key(f"{ilhammansiezzzzzz}", token)
+            SqL.set_key(f"{errickow}", "-100" + str(chat_id))
+            SqL.set_key(f"{errickow}", token)
             SqL.set_key(f"{botusername}", f"@{username}")  
-            var[ilhammansiezzzzzz] = "-100" + str(chat_id)
+            var[errickow] = "-100" + str(chat_id)
             var[ilhammansiezzzz] = token
             var[botusername] = f"@{username}"
         LOGS.info(f"SELESAI, ASSISTANT BOT ANDA SUDAH DIBUAT @{username}")
