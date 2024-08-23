@@ -85,10 +85,10 @@ async def get_user_from_event(
     return None, None
 
 
-async def checking(pandaub):
-    panda_c = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+async def checking(eruserbot):
+    erubot_c = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
     try:
-        panda_channel = Get(panda_c)
-        await pandaub(panda_channel)
+        erubot_channel = Get(erubot_c)
+        await eruserbot(erubot_channel)
     except BaseException:
         pass
