@@ -49,7 +49,7 @@ LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL") or 0)
 
 from logging import getLogger
 
-LOGS = getLogger("PandaUserbot")
+LOGS = getLogger("ErUbot")
 
 
 class Config(object):
@@ -85,9 +85,9 @@ ilhammansiezzzzzz = "PRIVATE_GROUP_BOT_API_ID"
 
 
 async def autogrup():
-    from userbot import PandaBot as mansizbot
+    from ErUbot import eruserbot as sabunbot
 
-    await mansizbot.start()
+    await sabunbot.start()
     if LOG_CHANNEL:
         (LOG_CHANNEL, str(LOG_CHANNEL))
         return
@@ -95,7 +95,7 @@ async def autogrup():
         return
     LOGS.info("🛠 MEMBUAT Grup Pribadi HARAP TUNGU !!")
     try:
-        r = await mansizbot(
+        r = await sabunbot(
             CreateChannelRequest(
                 title="🛠 BOTLOG & SETTING 🛠",
                 about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @TeamSquadUserbotSuport",
@@ -125,12 +125,12 @@ async def autogrup():
     )
     chat = r.chats[0]
     chat_id = chat.id
-    await mansizbot(EditAdminRequest(chat_id, TG_BOT_USERNAME, rights, "Assistant"))
+    await sabunbot(EditAdminRequest(chat_id, TG_BOT_USERNAME, rights, "Assistant"))
     photo = await download_file(
         "https://telegra.ph/file/da037f0eaeaa1423eea49.jpg", "channelphoto.jpg"
     )
-    ll = await mansizbot.upload_file(photo)
-    await mansizbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
+    ll = await sabunbot.upload_file(photo)
+    await sabunbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
     os.remove(photo)
     if not str(chat_id).startswith("-100"):
         Config.PRIVATE_GROUP_BOT_API_ID = "-100" + str(chat_id)
@@ -142,89 +142,89 @@ async def autogrup():
 
 
 async def autobot():
-    from userbot import PandaBot as mansizbot
+    from userbot import PandaBot as sabunbot
 
-    await mansizbot.start()
+    await sabunbot.start()
     if BOT_TOKEN:
         SqL.setdb("BOT_TOKEN", str(BOT_TOKEN))
         return
     if SqL.getdb("BOT_TOKEN"):
         return
     LOGS.info("🛠 MEMBUAT BOT UNTUK ANDA DI @BotFather, HARAP TUNGU !!")
-    who = await mansizbot.get_me()
+    who = await sabunbot.get_me()
     name = "Assistant " + who.first_name
     if who.username:
         username = who.username + "_Pandabot"
     else:
         username = "PandaX_Userbot_" + (str(who.id))[5:] + "_bot"
     bf = "Botfather"
-    await mansizbot(UnblockRequest(bf))
-    await mansizbot.send_message(bf, "/cancel")
+    await sabunbot(UnblockRequest(bf))
+    await sabunbot.send_message(bf, "/cancel")
     await asyncio.sleep(1)
-    await mansizbot.send_message(bf, "/start")
+    await sabunbot.send_message(bf, "/start")
     await asyncio.sleep(1)
-    await mansizbot.send_message(bf, "/newbot")
+    await sabunbot.send_message(bf, "/newbot")
     await asyncio.sleep(1)
-    isdone = (await mansizbot.get_messages(bf, limit=1))[0].text
+    isdone = (await sabunbot.get_messages(bf, limit=1))[0].text
     if isdone.startswith("That I cannot do."):
         LOGS.info(
             "Mohon buat bot baru di @BotFather dan tambahkan var BOT_TOKEN, lalu isi token nya dan restart."
         )
         exit(1)
-    await mansizbot.send_message(bf, name)
+    await sabunbot.send_message(bf, name)
     await asyncio.sleep(1)
-    isdone = (await mansizbot.get_messages(bf, limit=1))[0].text
+    isdone = (await sabunbot.get_messages(bf, limit=1))[0].text
     if not isdone.startswith("Good."):
-        await mansizbot.send_message(bf, "My Assistant Bot")
+        await sabunbot.send_message(bf, "My Assistant Bot")
         await asyncio.sleep(1)
-        isdone = (await mansizbot.get_messages(bf, limit=1))[0].text
+        isdone = (await sabunbot.get_messages(bf, limit=1))[0].text
         if not isdone.startswith("Good."):
             LOGS.info(
                 "Mohon buat bot baru di @BotFather dan tambahkan var BOT_TOKEN, lalu isi token nya dan restart."
             )
             exit(1)
-    await mansizbot.send_message(bf, username)
+    await sabunbot.send_message(bf, username)
     await asyncio.sleep(1)
-    isdone = (await mansizbot.get_messages(bf, limit=1))[0].text
-    await mansizbot.send_read_acknowledge("botfather")
+    isdone = (await sabunbot.get_messages(bf, limit=1))[0].text
+    await sabunbot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
         username = "PandaX_Userbot" + (str(who.id))[6:] + str(ran) + "_bot"
-        await mansizbot.send_message(bf, username)
+        await sabunbot.send_message(bf, username)
         await asyncio.sleep(1)
-        nowdone = (await mansizbot.get_messages(bf, limit=1))[0].text
+        nowdone = (await sabunbot.get_messages(bf, limit=1))[0].text
         if nowdone.startswith("Done!"):
             token = nowdone.split("`")[1]
-            await mansizbot.send_message(bf, "/setinline")
+            await sabunbot.send_message(bf, "/setinline")
             await asyncio.sleep(1)
-            await mansizbot.send_message(bf, f"@{username}")
+            await sabunbot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await mansizbot.send_message(bf, "menu...")
+            await sabunbot.send_message(bf, "menu...")
             await asyncio.sleep(3)
-            await mansizbot.send_message(bf, "/setuserpic")
+            await sabunbot.send_message(bf, "/setuserpic")
             await asyncio.sleep(1)
-            await mansizbot.send_message(bf, f"@{username}")
+            await sabunbot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await mansizbot.send_file(bf, "PandaVersion/Panda/pandaasis.jpg")
+            await sabunbot.send_file(bf, "PandaVersion/Panda/pandaasis.jpg")
             await asyncio.sleep(2)
-            await mansizbot.send_message(bf, "/setabouttext")
+            await sabunbot.send_message(bf, "/setabouttext")
             await asyncio.sleep(1)
-            await mansizbot.send_message(bf, f"@{username}")
+            await sabunbot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await mansizbot.send_message(
+            await sabunbot.send_message(
             bf, f"🙋 Hello ✨ Saya PandaX_Userbot Assistant"
             )
             await asyncio.sleep(2)
-            await mansizbot.send_message(bf, "/setdescription")
+            await sabunbot.send_message(bf, "/setdescription")
             await asyncio.sleep(1)
-            await mansizbot.send_message(bf, f"@{username}")
+            await sabunbot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await mansizbot.send_message(
+            await sabunbot.send_message(
             bf, f"PandaX_Userbot Assistant\n\nBy ~ @diemmmmmmmmmm\nSupport ~ @TEAMSquadUserbotSupport ",
             )
             LOGS.info(f"Ok, Sekarang Buat grupnya ya bangsat")
             try:
-                r = await mansizbot(
+                r = await sabunbot(
                     CreateChannelRequest(
                         title="🛠 BOTLOG & SETTING 🛠",
                         about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @TeamSquadUserbotSuport",
@@ -254,12 +254,12 @@ async def autobot():
             )
             chat = r.chats[0]
             chat_id = chat.id
-            await mansizbot(EditAdminRequest(chat_id, f"@{username}", rights, "Assistant"))
+            await sabunbot(EditAdminRequest(chat_id, f"@{username}", rights, "Assistant"))
             photo = await download_file(
                 "https://telegra.ph/file/da037f0eaeaa1423eea49.jpg", "channelphoto.jpg"
            )
-            ll = await mansizbot.upload_file(photo)
-            await mansizbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
+            ll = await sabunbot.upload_file(photo)
+            await sabunbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
             os.remove(photo)
             if not str(chat_id).startswith("-100"):
                SqL.set_key(f"{ilhammansiezzzzzz}", "-100" + str(chat_id))
@@ -276,36 +276,36 @@ async def autobot():
             exit(1)
     elif isdone.startswith("Done!"):
         token = isdone.split("`")[1]
-        await mansizbot.send_message(bf, "/setinline")
+        await sabunbot.send_message(bf, "/setinline")
         await asyncio.sleep(1)
-        await mansizbot.send_message(bf, f"@{username}")
+        await sabunbot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await mansizbot.send_message(bf, "menu...")
+        await sabunbot.send_message(bf, "menu...")
         await asyncio.sleep(3)
-        await mansizbot.send_message(bf, "/setuserpic")
+        await sabunbot.send_message(bf, "/setuserpic")
         await asyncio.sleep(1)
-        await mansizbot.send_message(bf, f"@{username}")
+        await sabunbot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await mansizbot.send_file(bf, "PandaVersion/Panda/pandaasis.jpg")
+        await sabunbot.send_file(bf, "PandaVersion/Panda/pandaasis.jpg")
         await asyncio.sleep(1)
-        await mansizbot.send_message(bf, "/setabouttext")
+        await sabunbot.send_message(bf, "/setabouttext")
         await asyncio.sleep(1)
-        await mansizbot.send_message(bf, f"@{username}")
+        await sabunbot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await mansizbot.send_message(
+        await sabunbot.send_message(
         bf, f"🙋 Hello ✨ Saya PandaX_Userbot Assistant"
         )
         await asyncio.sleep(2)
-        await mansizbot.send_message(bf, "/setdescription")
+        await sabunbot.send_message(bf, "/setdescription")
         await asyncio.sleep(1)
-        await mansizbot.send_message(bf, f"@{username}")
+        await sabunbot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await mansizbot.send_message(
+        await sabunbot.send_message(
         bf, f"PandaX_Userbot Assistant\n\nBy ~ @diemmmmmmmmmm\nSupport ~ @TEAMSquadUserbotSupport ",
         )
         LOGS.info("🛠 MEMBUAT Grup Pribadi HARAP TUNGU !!")
         try:
-            r = await mansizbot(
+            r = await sabunbot(
                 CreateChannelRequest(
                     title="🛠 BOTLOG & SETTING 🛠",
                     about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @TeamSquadUserbotSuport",
@@ -335,12 +335,12 @@ async def autobot():
         )
         chat = r.chats[0]
         chat_id = chat.id
-        await mansizbot(EditAdminRequest(chat_id, f"@{username}", rights, "Assistant"))
+        await sabunbot(EditAdminRequest(chat_id, f"@{username}", rights, "Assistant"))
         photo = await download_file(
             "https://telegra.ph/file/da037f0eaeaa1423eea49.jpg", "channelphoto.jpg"
         )
-        ll = await mansizbot.upload_file(photo)
-        await mansizbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
+        ll = await sabunbot.upload_file(photo)
+        await sabunbot(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
         os.remove(photo)
         if not str(chat_id).startswith("-100"):
             SqL.set_key(f"{ilhammansiezzzzzz}", "-100" + str(chat_id))
