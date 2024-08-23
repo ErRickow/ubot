@@ -138,6 +138,6 @@ class Database(object):
     PyroSESSION2 = os.environ.get("PyroSESSION2", None)
     PyroSESSION3 = os.environ.get("PyroSESSION3", None)
     PyroSESSION4 = os.environ.get("PyroSESSION4", None)
-    DB_URIl = os.environ.get("DATABASES_URL", "mongodb+srv://petercord:b38DJZL3X6zhnHJ0@cluster0.e9xau.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    DB_URIl = os.environ.get("DATABASES_URL", None)
     PyroBOT_TOKEN = os.environ.get("PyroBOT_TOKEN", None)
  
