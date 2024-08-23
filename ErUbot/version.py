@@ -12,7 +12,7 @@ __version_code__ = (
 
 __version__ = __pversion__ + __version_code__
 
-panda_version = __version__
+ubot_version = __version__
 
 
 
