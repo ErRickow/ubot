@@ -13,7 +13,7 @@ import sys
 from telethon import TelegramClient
 
 import logging
-from .._database import pdB
+from .database import pdB
 
 
 package_patern = re.compile(r"([\w-]+)(?:=|<|>|!)")
