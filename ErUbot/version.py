@@ -29,7 +29,7 @@ __Thn__ = "2023"
 
 
 __python_version__ = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
-__license__ = "GNU Affero General Public License v3.0"
+__license__ = "MIT"
 __author__ = "Er Userbot <https://github.com/ErRickow/ubot>"
 __copyright__ = "Er Userbot Copyright (©) 2024" + __author__
 
