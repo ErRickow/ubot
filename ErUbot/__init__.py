@@ -60,10 +60,10 @@ LOAD_PLUG = {}
 
 
 bot = ErBot
-pandaub = ErBot
+uboter = ErBot
 botvc = ErBot
 Stark = ErBot
-petercordpanda_bot = pandaub
+petercordpanda_bot = uboter
 
 def dual_mode():
     try:
