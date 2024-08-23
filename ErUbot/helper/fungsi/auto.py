@@ -98,7 +98,7 @@ async def autogrup():
         r = await sabunbot(
             CreateChannelRequest(
                 title="🛠 BOTLOG & SETTING 🛠",
-                about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @TeamSquadUserbotSuport",
+                about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @Pamerdong",
                 megagroup=True,
             ),
         )
@@ -156,7 +156,7 @@ async def autobot():
     if who.username:
         username = who.username + "_Pandabot"
     else:
-        username = "PandaX_Userbot_" + (str(who.id))[5:] + "_bot"
+        username = "Er Userbot_" + (str(who.id))[5:] + "_bot"
     bf = "Botfather"
     await sabunbot(UnblockRequest(bf))
     await sabunbot.send_message(bf, "/cancel")
@@ -189,7 +189,7 @@ async def autobot():
     await sabunbot.send_read_acknowledge("botfather")
     if isdone.startswith("Sorry,"):
         ran = randint(1, 100)
-        username = "PandaX_Userbot" + (str(who.id))[6:] + str(ran) + "_bot"
+        username = "Er Userbot" + (str(who.id))[6:] + str(ran) + "_bot"
         await sabunbot.send_message(bf, username)
         await asyncio.sleep(1)
         nowdone = (await sabunbot.get_messages(bf, limit=1))[0].text
@@ -212,7 +212,7 @@ async def autobot():
             await sabunbot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await sabunbot.send_message(
-            bf, f"🙋 Hello ✨ Saya PandaX_Userbot Assistant"
+            bf, f"🙋 Hello ✨ Saya Er Userbot Assistant"
             )
             await asyncio.sleep(2)
             await sabunbot.send_message(bf, "/setdescription")
@@ -220,14 +220,14 @@ async def autobot():
             await sabunbot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await sabunbot.send_message(
-            bf, f"PandaX_Userbot Assistant\n\nBy ~ @diemmmmmmmmmm\nSupport ~ @TEAMSquadUserbotSupport ",
+            bf, f"Er Userbot Assistant\n\nBy ~ @Chakszzz\nSupport ~ @Pamerdong ",
             )
             LOGS.info(f"Ok, Sekarang Buat grupnya ya bangsat")
             try:
                 r = await sabunbot(
                     CreateChannelRequest(
                         title="🛠 BOTLOG & SETTING 🛠",
-                        about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @TeamSquadUserbotSuport",
+                        about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @Pamerdong",
                         megagroup=True,
                     ),
                 )
@@ -293,7 +293,7 @@ async def autobot():
         await sabunbot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await sabunbot.send_message(
-        bf, f"🙋 Hello ✨ Saya PandaX_Userbot Assistant"
+        bf, f"🙋 Hello ✨ Saya Er Userbot Assistant"
         )
         await asyncio.sleep(2)
         await sabunbot.send_message(bf, "/setdescription")
@@ -301,14 +301,14 @@ async def autobot():
         await sabunbot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await sabunbot.send_message(
-        bf, f"PandaX_Userbot Assistant\n\nBy ~ @diemmmmmmmmmm\nSupport ~ @TEAMSquadUserbotSupport ",
+        bf, f"Er Userbot Assistant\n\nBy ~ @Chakszzz\nSupport ~ @Pamerdong ",
         )
         LOGS.info("🛠 MEMBUAT Grup Pribadi HARAP TUNGU !!")
         try:
             r = await sabunbot(
                 CreateChannelRequest(
                     title="🛠 BOTLOG & SETTING 🛠",
-                    about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @TeamSquadUserbotSuport",
+                    about="Ini adalah sebuah grup yang dibuat otomatis untuk mengatur bot saat erorr ...\n\n Join @Pamerdong",
                     megagroup=True,
                 ),
             )
