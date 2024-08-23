@@ -21,11 +21,11 @@ from .Session import *
 from .versions import __version__
 import logging
 from .versions import __version__, __license__, __author__, __copyright__
-from ._helper import gen, regex
+from .helper import gen, regex
 
 DEVLIST = ublackdev.plist
 DEVS = DEVLIST
-LOGS = logging.getLogger("PandaUserbot")
+LOGS = logging.getLogger("ErUbot")
 loop = None
 
 __version__ = __version__
@@ -59,10 +59,10 @@ INT_PLUG = ""
 LOAD_PLUG = {}
 
 
-bot = PandaBot
-pandaub = PandaBot
-botvc = PandaBot
-Stark = PandaBot
+bot = ErBot
+pandaub = ErBot
+botvc = ErBot
+Stark = ErBot
 petercordpanda_bot = pandaub
 
 def dual_mode():
@@ -156,13 +156,13 @@ async def update_user(chat_id, msg_id):
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
     )
-    await PandaBot.edit_message(chat_id, msg_id, message)
+    await ErBot.edit_message(chat_id, msg_id, message)
     return True
 
 
 try:
     chat_id, msg_id = gvarstatus("restartstatus").split("\n")
-    with PandaBot:
+    with ErBot:
         try:
             LOOP.run_until_complete(update_user(int(chat_id), int(msg_id)))
         except BaseException:
