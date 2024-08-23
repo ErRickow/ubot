@@ -11,7 +11,6 @@ from redis import StrictRedis
 
 import sys
 import os
-import ErUbot
 from ._database import *
 DB = pyDatabase()
 SqL = DB
