@@ -79,7 +79,7 @@ async def restart_script(client: TelegramClient, ilham):
     except Exception as e:
         LOGS.error(e)
     executable = sys.executable.replace(" ", "\\ ")
-    args = [executable, "-m", "userbot"]
+    args = [executable, "-m", "ErUbot"]
     os.execle(executable, *args, os.environ)
     sys.exit(0)
 
