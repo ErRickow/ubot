@@ -11,7 +11,7 @@ import os
 from .classstring import *
 from .._misc.client import ErUbotSession
 from .._misc.botclient import ErUserbotToken
-from .._database import pyDatabase
+from ..database import pyDatabase
 DB = pyDatabase()
 from telethon import TelegramClient
 import sys
