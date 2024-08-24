@@ -193,10 +193,10 @@ INLINE_PIC = (
     os.environ.get("INLINE_PIC") or "https://telegra.ph/file/49c5688e7ca9689d02e87.jpg"
 )
 PLAY_PIC = (
-    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/6213d2673486beca02967.png"
+    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/49c5688e7ca9689d02e87.jpg"
 )
 QUEUE_PIC = (
-    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/d6f92c979ad96b2031cba.png"
+    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/49c5688e7ca9689d02e87.jpg"
 )
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "PandaUserbot")
