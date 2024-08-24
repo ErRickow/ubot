@@ -2,6 +2,8 @@ states = [
     "Medan",
     "Bandung",
     "Surabaya",
+    "Magelang",
+    "Semarang",
     "Jakarta",
     "Kalimantan",
     "Chandigarh",
