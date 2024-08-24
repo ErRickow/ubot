@@ -75,7 +75,7 @@ REGEX_ = REGEX()
 sudo_enabledcmds = sudo_enabled_cmds()
 
 class ErUbotSession(TelegramClient):
-    def ilhammansiz_cmd(
+    def nganu_cmd(
         self: TelegramClient,
         pattern: str or tuple = None,
         info: str or tuple = None,
