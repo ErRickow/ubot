@@ -6,7 +6,7 @@
 # t.me/pandac0de t.me/pandauserbot
 
 from pyrogram import Client
-from .classpyro import PyroClient
+from session.classpyro import PyroClient
 from .._database import pdB
 from .._database._var import Database
 
