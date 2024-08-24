@@ -26,7 +26,7 @@ class Config(object):
     TEMP_DICT = os.getenv("TEMP_DICT", os.path.abspath(".") + "/downloads/")
     # official repo for updates
     UPSTREAM_REPO = os.getenv(
-        "UPSTREAM_REPO", "https://github.com/ilhammansiz/PandaX_Userbot.git"
+        "UPSTREAM_REPO", "https://github.com/ErRickow/ubot.git"
     )
     # ------------------
     # heroku api key (required -> if hosted on heroku)
@@ -49,7 +49,7 @@ class Config(object):
     # exclude official plugins from installing, give a space between plugin names
     NO_LOAD = [int(x) for x in os.getenv("NO_LOAD", "").split()]  # splits on spaces
     # default reason for afk plugin
-    AFK_TEXT = os.getenv("AFK_TEXT", "I am busy Now !")
+    AFK_TEXT = os.getenv("AFK_TEXT", "Gw Lagi Sibuk !")
     # ------------------
     # add True to enable (default: False)
     PMPERMIT = os.getenv("PMPERMIT", False)
@@ -68,8 +68,8 @@ class Config(object):
     USER_ID = os.getenv("USER_ID")
     USER_USERNAME = os.getenv("USER_USERNAME")
     BOT_BIO = os.getenv("BOT_BIO")
-    BOT_NAME = os.getenv("BOT_NAME", "PandaUserbot")
-    BOT_PIC = os.getenv("BOT_PIC", "https://telegra.ph//file/ba8081afe4eb70270cf03.jpg")
+    BOT_NAME = os.getenv("BOT_NAME", "Er Usrrbot")
+    BOT_PIC = os.getenv("BOT_PIC", "https://telegra.ph/file/0ba5447759e13546a3122.jpg")
     BOT_USERNAME = os.getenv("BOT_USERNAME")
     BOT_ID = os.getenv("BOT_ID")
     TOKEN = os.getenv("BOT_TOKEN")
