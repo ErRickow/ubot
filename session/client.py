@@ -5,11 +5,11 @@
 import sys
 
 
-from .._database._var import Var, Database
+from ..database._var import Var, Database
 from ..versions import __version__
 import os
 from .classstring import *
-from .._misc.client import ErUbotSession
+from .._misc.client import ErSession
 from .._misc.botclient import ErUserbotToken
 from ..database import pyDatabase
 DB = pyDatabase()
