@@ -73,6 +73,6 @@ class Config(object):
     BOT_USERNAME = os.getenv("BOT_USERNAME")
     BOT_ID = os.getenv("BOT_ID")
     TOKEN = os.getenv("BOT_TOKEN")
-    THUMB_PIC = os.getenv("THUMB_PIC", "https://telegra.ph//file/ba8081afe4eb70270cf03.jpg")
+    THUMB_PIC = os.getenv("THUMB_PIC", "https://telegra.ph/file/c22cea683a0c0dd603fb1.jpg")
     TL_NAME = os.getenv("TL_NAME")
     HELP_EMOJI = os.getenv("HELP_EMOJI")
