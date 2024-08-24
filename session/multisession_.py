@@ -24,7 +24,7 @@ PRIVATE = int(os.environ.get("PRIVATE_GROUP_BOT_API_ID"))
 cmdhr = os.environ.get("COMMAND_HAND_LER") or "."
 
 MSG_ON = """
-꧁༺ Panda Userbot ༻꧂\n\n
+꧁༺ Er Userbot\n\n
 User - @{} 
 Pyrogram Version - `{}' `[HAVE ENABLED]` 
 Type `{}alive` to Check Bot 
@@ -33,7 +33,7 @@ Total Clients - {}
 
 
 THON_ON = """
-꧁༺ Panda Userbot ༻꧂\n\n
+꧁༺ Er Userbot ༻꧂\n\n
 User - @{} 
 Version - `{}' `[HAVE ENABLED]` 
 Type `{}alive` to Check Bot 
