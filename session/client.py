@@ -9,7 +9,7 @@ from .._database._var import Var, Database
 from ..versions import __version__
 import os
 from .classstring import *
-from .._misc.client import ErUserbotSession
+from .._misc.client import ErUbotSession
 from .._misc.botclient import ErUserbotToken
 from .._database import pyDatabase
 DB = pyDatabase()
