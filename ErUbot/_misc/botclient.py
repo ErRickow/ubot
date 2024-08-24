@@ -11,8 +11,8 @@ import traceback
 
 from telethon import TelegramClient, events
 from ..config import Config
-from ..helpers.utils.format import paste_text
-from ..helpers.utils.utils import runcmd
+from ..helper.utils.format import paste_text
+from ..helper.utils.utils import runcmd
 from .logger import logging
 
 LOGS = logging.getLogger(__name__)
