@@ -394,11 +394,11 @@ class Config(object):
     COMMAND_HANDLER = COMMAND_HAND_LER
     SUDO_USERS = SUDO_USERS
     AFS = list(SUDO_USERS)
-    CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "🐼")
+    CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "📍")
     LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
     FBAN_GROUP = int(os.environ.get("FBAN_GROUP", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/AllTeamPanda/PandaX_Userbot"
+        "UPSTREAM_REPO", "https://github.com/ErRickow/ubot"
     )
     ALIVE_IMG = os.environ.get(
         "ALIVE_IMG", "https://telegra.ph/file/8f0e9e25427f9da09e08a.jpg"
