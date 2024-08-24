@@ -4,7 +4,7 @@
 # Panda Userbot <https://github.com/ilhammansiz/PandaX_Userbot>
 # Recode by Ilham Mansiz
 
-from ..database._var import Var
+from .database._var import Var
 from ..database import pdB
 import base64
 import ipaddress
