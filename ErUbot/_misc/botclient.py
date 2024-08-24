@@ -18,7 +18,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 
-class PandaUserbotToken(TelegramClient):
+class ErUserbotToken(TelegramClient):
     def bot_cmd(
         self: TelegramClient,
         disable_errors: bool = False,
