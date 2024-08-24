@@ -401,7 +401,7 @@ class Config(object):
         "UPSTREAM_REPO", "https://github.com/ErRickow/ubot"
     )
     ALIVE_IMG = os.environ.get(
-        "ALIVE_IMG", "https://telegra.ph/file/8f0e9e25427f9da09e08a.jpg"
+        "ALIVE_IMG", "https://telegra.ph/file/c22cea683a0c0dd603fb1.jpg"
     )
     PLUGINS_REPO = os.environ.get("PLUGINS_REPO", "https://github.com/AllTeamPanda/Plugins")
     if bool(PLUGINS_REPO and (PLUGINS_REPO.lower() != "false")):
