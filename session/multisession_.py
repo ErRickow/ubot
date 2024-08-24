@@ -1453,7 +1453,7 @@ def Pyrogram():
             print("Activating assistant.\n")
             app.bot.start()
             print("Assistant activated.\n")
-            asistant = app.import_module("userbot/modules/pyrogram/asistant/", exclude=app.NoLoad())
+            asistant = app.import_module("ErUbot/modules/pyrogram/asistant/", exclude=app.NoLoad())
             print(f"\n\n{asistant} modules Loaded Sucesfull\n\n")
         else:
             print("Assistant start unsuccessful, please check that you have given the bot token.\n")
