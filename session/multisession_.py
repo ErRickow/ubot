@@ -895,7 +895,7 @@ def Telethon():
                     break
             tgbot.get_me()
             ErBot33.me = ErBot33.get_me()
-            PandaBo33.uid = tgbot.uid = utils.get_peer_id(ErBot33.me)
+            ErBol33.uid = tgbot.uid = utils.get_peer_id(ErBot33.me)
             if pdB.get_key("OWNER_ID") or Var.OWNER_ID == 0:
                 Var.OWNER_ID = utils.get_peer_id(ErBot33.me)
                 pdB.set_key("OWNER_ID", Var.OWNER_ID)
@@ -973,7 +973,7 @@ def Telethon():
                     break
             tgbot.get_me()
             ErBot36.me = ErBot36.get_me()
-            PandaBo36.uid = tgbot.uid = utils.get_peer_id(ErBot36.me)
+            ErBol36.uid = tgbot.uid = utils.get_peer_id(ErBot36.me)
             if pdB.get_key("OWNER_ID") or Var.OWNER_ID == 0:
                 Var.OWNER_ID = utils.get_peer_id(ErBot36.me)
                 pdB.set_key("OWNER_ID", Var.OWNER_ID)
@@ -1077,7 +1077,7 @@ def Telethon():
                     break
             tgbot.get_me()
             ErBot40.me = ErBot40.get_me()
-            PandaBo40.uid = tgbot.uid = utils.get_peer_id(ErBot40.me)
+            ErBol40.uid = tgbot.uid = utils.get_peer_id(ErBot40.me)
             if pdB.get_key("OWNER_ID") or Var.OWNER_ID == 0:
                 Var.OWNER_ID = utils.get_peer_id(ErBot40.me)
                 pdB.set_key("OWNER_ID", Var.OWNER_ID)
