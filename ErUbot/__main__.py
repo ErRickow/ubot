@@ -29,7 +29,7 @@ def start():
     #userbot.LOOP.run_until_complete(resources.cloneplugins())
     #userbot.LOOP.run_until_complete(resources.clonevc())
     userbot.LOOP.run_until_complete(resources.join())
-    LOGS.info(f"꧁༺ Panda Userbot ༻꧂\n⚙️ Version:{userbot.__version__} [TELAH DIAKTIFKAN]")
+    LOGS.info(f"꧁༺ Er Userbot ༻꧂\n⚙️ Version:{userbot.__version__} [TELAH DIAKTIFKAN]")
     if ErBot:
         ErBot.send_message(PRIVATE, THON_ON.format(ErBot.me.username, userbot.__version__, cmdhr, total))
     if ErBot2:
