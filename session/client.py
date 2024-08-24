@@ -20,7 +20,7 @@ import logging
 BOT_TOKEN = DB.get_key("BOT_TOKEN") or os.environ.get("BOT_TOKEN", None)
 CEKBOT = "5293882146:AAFQIjmaC9ObBu98PAvctLu0QxkckfOJrz4"
 
-LOGS = logging.getLogger("PandaUserbot")
+LOGS = logging.getLogger("ErUbot")
 loop = None
 
 
