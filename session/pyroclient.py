@@ -7,8 +7,8 @@
 
 from pyrogram import Client
 from session.classpyro import PyroClient
-from .._database import pdB
-from .._database._var import Database
+from ..database import pdB
+from ..database._var import Database
 
 
 
