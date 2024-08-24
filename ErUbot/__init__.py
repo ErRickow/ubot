@@ -33,7 +33,7 @@ __license__ = __license__
 __author__ = __author__
 __copyright__ = __copyright__
 
-pandaversion = __version__
+eruserbotversion = __version__
 StartTime = time.time()
 BOT_MODE = SqL.get_key("MODE_DUAL")
 DUAL_MODE = SqL.get_key("DUAL_MODE")
