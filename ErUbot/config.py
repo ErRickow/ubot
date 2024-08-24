@@ -187,10 +187,10 @@ INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "᪥")
 ICON_HELP = os.environ.get("ICON_HELP", "❈")
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/336d811bce4f1d1053fbf.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/49c5688e7ca9689d02e87.jpg"
 )
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/336d811bce4f1d1053fbf.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/49c5688e7ca9689d02e87.jpg"
 )
 PLAY_PIC = (
     os.environ.get("PLAY_PIC") or "https://telegra.ph/file/6213d2673486beca02967.png"
